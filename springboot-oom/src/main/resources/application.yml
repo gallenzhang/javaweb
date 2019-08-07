@@ -1,0 +1,7 @@
+server.port: 8888
+server.context-path: /
+
+# encoding with utf-8(default)
+spring.http.encoding.force: true
+spring.http.encoding.charset: UTF-8
+spring.http.encoding.enabled: true
