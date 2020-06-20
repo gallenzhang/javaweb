@@ -11,19 +11,23 @@
 	</parent>
 
 	<groupId>com.gallenzhang</groupId>
-	<artifactId>spring-cloud-client</artifactId>
+	<artifactId>spring-cloud-consumer</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>spring-cloud-client</name>
+	<name>spring-cloud-consumer</name>
  
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 	</dependencies>
  

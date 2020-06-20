@@ -1,0 +1,11 @@
+server:
+  port: 8100
+
+spring:
+  application:
+    name: spring-cloud-provider #服务之间的调用都是根据这个 name
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
